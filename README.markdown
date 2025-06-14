@@ -57,19 +57,24 @@ The report addresses the following key questions, with corresponding visualizati
 ## Detailed Report Pages
 - **Page 2: Number of Patients by Symptoms**
   - **Content**: Displays the count of patients experiencing specific symptoms, including Chest Pain (500 True, 500 False), Sweating (500 True, 500 False), and Shortness of Breath (500 True, 500 False) across the 1200 patients.
-  - **Insight**: Highlights symptom prevalence, equal distribution of Chest Pain , Sweating, Dizzinnes , Trembling
+  - **Insight**: Highlights symptom prevalence, equal distribution of `Chest Pain` , `Sweating`, `Dizzinnes` and  `Trembling`
 ![](Images/p2.png)
 - **Page 3: Number of Patients by `Sleep Hours`, `Panic Attack Duration`, and `Drinks per Week`**
   - **Content**: Presents the distribution of patients based on `Sleep Hours`, `Panic Attack Duration (min)`, and `Drinks per Week`, filtered by `Gender`, `Trigger Reason`, `Medical History`, and `Panic Score`. This allows for a detailed breakdown of lifestyle impacts across demographic and clinical factors.
 
 
   - **Insight**: Reveals potential correlations, lower sleep hours linked to higher `Panic Score`, or longer durations with specific triggers like PTSD.
+  - 
 ![](Images/p3.png)
+
 - **Page 4: Average of Sleep Hours, Panic Score, and Smoking by Age Group**
   - **Content**: Shows the average `Sleep Hours`, `Panic Score`, and count of `Smoking` (Yes/No) across age groups  for the 1200 patients. 
  
   - **Insight**: Suggests trends,  higher `Panic Score` in older age groups or smoking prevalence affecting sleep, warranting further investigation.
+ 
+  
   ![](Images/p4.png)
 
+![](Images/p4_1.png)
 
 ## Thank You 🖤🖥️
