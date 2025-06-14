@@ -19,7 +19,7 @@ The dataset is sourced from Snowflake, a cloud-based data platform, and connecte
 [Power BI Service (Optional for Sharing)]
 ```
 - **Description**: The diagram illustrates the data flow from the Snowflake Data Warehouse to Power BI. The Snowflake connector in Power BI establishes the link, allowing data to be imported into the Power BI model or queried in real-time using DirectQuery mode. The processed data is then visualized in Power BI Desktop, with the option to publish to the Power BI Service for broader access.
-
+![](Images/pipline.png)
 ## Dataset Overview
 The dataset contains records for 1200 patients, with fields including:
 - **Demographics**: Age, Gender.
@@ -28,38 +28,48 @@ The dataset contains records for 1200 patients, with fields including:
 - **Lifestyle and Treatment Factors**: Caffeine Intake, Sleep Hours, Therapy, Medication, Smoking.
 
 ## Visualizations and Insights
-The report addresses the following key questions, with corresponding visualizations exported as images in the `images` folder:
+The report addresses the following key questions, with corresponding visualizations exported as images in the `Images` folder:
 
 1. **What are the most common triggers for panic attacks?**
-   - **Image**: Images/q1_triggers.png
+     
    - **Description**: A column chart displays the count of triggers (Caffeine, Phobia, PTSD, Social Anxiety, Stress) based on the dataset, with Caffeine and Phobia appearing frequently among the 1200 patients.
 
+![](Images/q1_triggers.png)
+
 2. **How do demographic factors like Age and Gender correlate with Panic Attack Frequency or Panic Score?**
-   - **Image**: `images/q2_demographics.png`
+   
    - **Description**: A scatter plot with `Age` on the X-axis and average `Panic Score` on the Y-axis, color-coded by `Gender` (Female, Male, Non-binary), shows trends across the 1200 patients.
+  
+![](Images/q2_triggers.png)
 
-3. **Are there relationships between lifestyle factors (Caffeine Intake, Sleep Hours) and panic attack severity?**
-   - **Image**: `images/q3_lifestyle.png`
-   - **Description**: A column chart compares average `Panic Score` across ranges of `Caffeine Intake` and `Sleep Hours`, suggesting potential correlations with severity among the 1200 patients.
 
-4. **How do symptoms (Heart Rate, Chest Pain, Sweating, Shortness of Breath) vary across different triggers or demographic groups?**
-   - **Image**: `images/q4_symptoms.png`
+3. **How do symptoms (Heart Rate, Chest Pain, Sweating, Shortness of Breath) vary across different triggers or demographic groups?**
    - **Description**: A table visualizes the count of patients with symptoms (e.g., 500 with Chest Pain True, 500 with Sweating True) across triggers, highlighting variations.
 
-5. **Does Therapy or Medication impact Panic Attack Frequency or Panic Score?**
-   - **Image**: `images/q5_therapy_medication.png`
+![](Images/q3_triggers.png)
+
+4. **Does Therapy or Medication impact Panic Attack Frequency or Panic Score?**
+   
    - **Description**: A pie chart shows the proportion of average `Panic Score` for `Therapy` (49.54% False, 50.46% True), indicating a near-even split among the 1200 patients.
 
-## How to Use This Repository
-- **Clone the Repository**: Use `git clone <repository-URL>` to download the project.
-- **Open the Project**: Load the `.pbip` file in Power BI Desktop to explore the report.
-- **View Visuals**: Check the `images` folder for exported visualizations corresponding to the questions above.
-- **Data Connection**: Update the Snowflake credentials in Power BI (`File > Options and Settings > Data Source Settings`) to match your environment.
+   ![](Images/q4_triggers.png)
 
-## Future Improvements
-- Expand analysis with additional lifestyle factors (e.g., Alcohol Consumption, Smoking).
-- Refine visualizations with interactive filters for deeper exploration.
-- Incorporate predictive analytics to forecast panic attack risks.
+## Detailed Report Pages
+- **Page 2: Number of Patients by Symptoms**
+  - **Content**: Displays the count of patients experiencing specific symptoms, including Chest Pain (500 True, 500 False), Sweating (500 True, 500 False), and Shortness of Breath (500 True, 500 False) across the 1200 patients.
+  - **Insight**: Highlights symptom prevalence, equal distribution of Chest Pain , Sweating, Dizzinnes , Trembling
+![](Images/p2.png)
+- **Page 3: Number of Patients by `Sleep Hours`, `Panic Attack Duration`, and `Drinks per Week`**
+  - **Content**: Presents the distribution of patients based on `Sleep Hours`, `Panic Attack Duration (min)`, and `Drinks per Week`, filtered by `Gender`, `Trigger Reason`, `Medical History`, and `Panic Score`. This allows for a detailed breakdown of lifestyle impacts across demographic and clinical factors.
 
-## License
-[Add your preferred license, e.g., MIT, here or state "No license specified" if none.]
+
+  - **Insight**: Reveals potential correlations, lower sleep hours linked to higher `Panic Score`, or longer durations with specific triggers like PTSD.
+![](Images/p3.png)
+- **Page 4: Average of Sleep Hours, Panic Score, and Smoking by Age Group**
+  - **Content**: Shows the average `Sleep Hours`, `Panic Score`, and count of `Smoking` (Yes/No) across age groups  for the 1200 patients. 
+ 
+  - **Insight**: Suggests trends,  higher `Panic Score` in older age groups or smoking prevalence affecting sleep, warranting further investigation.
+  ![](Images/p4.png)
+
+
+## Thank You 🖤🖥️
