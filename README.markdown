@@ -31,7 +31,7 @@ The dataset contains records for 1200 patients, with fields including:
 The report addresses the following key questions, with corresponding visualizations exported as images in the `images` folder:
 
 1. **What are the most common triggers for panic attacks?**
-   - **Image**: `Images/q1_triggers.png`
+   - **Image**: Images/q1_triggers.png
    - **Description**: A column chart displays the count of triggers (Caffeine, Phobia, PTSD, Social Anxiety, Stress) based on the dataset, with Caffeine and Phobia appearing frequently among the 1200 patients.
 
 2. **How do demographic factors like Age and Gender correlate with Panic Attack Frequency or Panic Score?**
