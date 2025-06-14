@@ -52,7 +52,7 @@ The report addresses the following key questions, with corresponding visualizati
    
    - **Description**: A pie chart shows the proportion of average `Panic Score` for `Therapy` (49.54% False, 50.46% True), indicating a near-even split among the 1200 patients.
 
-   ![](Images/q4_triggers.png)
+![](Images/q4_triggers.png)
 
 ## Detailed Report Pages
 - **Page 2: Number of Patients by Symptoms**
@@ -64,7 +64,7 @@ The report addresses the following key questions, with corresponding visualizati
 
 
   - **Insight**: Reveals potential correlations, lower sleep hours linked to higher `Panic Score`, or longer durations with specific triggers like PTSD.
-  - 
+   
 ![](Images/p3.png)
 
 - **Page 4: Average of Sleep Hours, Panic Score, and Smoking by Age Group**
@@ -73,8 +73,8 @@ The report addresses the following key questions, with corresponding visualizati
   - **Insight**: Suggests trends,  higher `Panic Score` in older age groups or smoking prevalence affecting sleep, warranting further investigation.
  
   
-  ![](Images/p4.png)
+![](Images/p4.png)
 
-![](Images/p4_1.png)
+![](Images/p4-1.png)
 
 ## Thank You 🖤🖥️
